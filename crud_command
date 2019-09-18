@@ -1,3 +1,35 @@
 Baking for prefix folders (e.g. admin)
 
 bin/cake bake controller Users --prefix admin
+Generate Controller as 
+src/Controller/Admin/UsersController.php
+
+bin/cake bake template Users --prefix admin
+Generate View as 
+src/Template/Admin/Users/index.ctp edit.ctp add.ctp view.ctp
+
+---------------------------
+
+Create a controller for a table called users
+bin/cake bake controller Users
+Generate Controller as  src/Controller/UsersController.php
+
+---------------------------
+Create a model & entity  for a table called users
+bin/cake bake model Users
+src/Model/Table/UsersTable.php
+src/Model/Entities/User.php
+
+Create the default template files for a table (add/edit/view/index)
+bin/cake bake template Users
+creates src/Template/Users/index.ctp add.ctp edit.ctp view.ctp
+
+---------------------------
+Bake all in one
+bin/cake bake all Users
+
+
+Bake just the index template file
+bin/cake bake template Users index
+src/Template/Users/index.ctp
+---------------------------
