@@ -1,0 +1,3 @@
+Baking for prefix folders (e.g. admin)
+
+bin/cake bake controller Users --prefix admin
